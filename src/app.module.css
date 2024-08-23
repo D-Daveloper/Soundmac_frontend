@@ -1,0 +1,17 @@
+.container {
+  overflow: hidden;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(
+      94deg,
+      rgba(34, 134, 153, 0.42) 6.6%,
+      rgba(0, 255, 255, 0.4) 33.23%,
+      rgba(13, 168, 234, 0.62) 51.22%,
+      rgba(13, 114, 234, 0.8) 70.66%,
+      rgba(34, 134, 153, 0.61) 87.89%
+    ),
+    #000;
+}

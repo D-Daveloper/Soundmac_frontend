@@ -1,0 +1,48 @@
+.btn_bg {
+  display: flex;
+  justify-content: center;
+  width: calc(339 / 1280 * 100vw);
+  height: calc(64 / 640 * 100vh);
+  flex-shrink: 0;
+  border-radius: calc(10 / 1280 * 100vw);
+  align-items: center;
+  margin-bottom: calc(11 / 640 * 100vh);
+  cursor: pointer;
+  line-height: normal;
+  transition: all 0.2s;
+  background: #ff4500;
+
+  color: #fff;
+  font-family: Inter;
+  font-size: calc(14 / 1280 * 100vw);
+  font-style: normal;
+  font-weight: 700;
+}
+.btn_bg:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+@media screen and (max-width: 999px) {
+  .btn_bg {
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    margin-bottom: 11px;
+    font-size: 14px;
+  }
+  .btn_bg:hover {
+    transform: scale(0);
+  }
+}
+@media screen and (max-width: 540px) {
+  .btn_bg {
+    width: 100%;
+    height: calc(64 / 896 * 100vh);
+    font-size: calc(14 / 414 * 100vw);
+    border-radius: calc(10 / 414 * 100vw);
+    margin-bottom: calc(11 / 896 * 100vh);
+  }
+  .btn_bg:hover {
+    transform: scale(0);
+  }
+}

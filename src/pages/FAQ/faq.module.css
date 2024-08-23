@@ -1,0 +1,36 @@
+.container {
+  background: rgba(255, 255, 255, 0.82);
+  padding: 20px;
+  font-family: Inter;
+}
+.title {
+  font-weight: bold;
+}
+
+.sub_container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.side_pane {
+  width: 40%;
+  font-size: 12px;
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+}
+.questions {
+  margin: 10px 0;
+}
+.answers_group {
+  margin-left: 20px;
+}
+.answers_heading {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.answers_text {
+  font-size: 12px;
+  margin-bottom: 30px;
+}

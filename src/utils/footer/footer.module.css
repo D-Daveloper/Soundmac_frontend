@@ -1,0 +1,127 @@
+.container {
+  height: 5vw; /* 80px to vw */
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0px 1.25vw 1.25vw 0px rgba(0, 0, 0, 0.25);
+  padding: 2.0625vw 1.625vw; /* 33px 26px to vw */
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.text,
+.text_2,
+.text_3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.09375vw; /* 14px to vw */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: auto;
+}
+
+.text_2 {
+  margin-right: 1vw; /* 16px to vw */
+}
+
+.text_3 {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.icon {
+  width: 1.5625vw; /* 20px to vw */
+  height: 1.5625vw; /* 20px to vw */
+  flex-shrink: 0;
+  margin-right: 0.5625vw; /* 9px to vw */
+}
+
+icons_container {
+  margin-right: auto;
+}
+
+.back_to_top_container {
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    padding: 40px 10px;
+    height: fit-content;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+  }
+
+  .text,
+  .text_2,
+  .text_3 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .text_2 {
+    margin-right: 14px;
+  }
+
+  .text_3 {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .icon {
+    width: 15px;
+    height: 20px;
+    margin-right: 9px;
+  }
+
+  .back_to_top_container {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding: calc(40 / 896 * 100vh) calc(10 / 414 * 100vw);
+    height: fit-content;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+  }
+
+  .text,
+  .text_2,
+  .text_3 {
+    font-size: calc(12 / 414 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 0;
+    margin-bottom: calc(10 / 896 * 100vh);
+  }
+
+  .text_2 {
+    margin-right: calc(14 / 414 * 100vw);
+  }
+
+  .text_3 {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .icon {
+    width: calc(15 / 414 * 100vw);
+    height: calc(20 / 896 * 100vh);
+    margin-right: calc(9 / 414 * 100vw);
+  }
+
+  .back_to_top_container {
+    margin-top: calc(20 / 896 * 100vh);
+  }
+}

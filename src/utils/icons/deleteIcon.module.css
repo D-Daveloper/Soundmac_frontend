@@ -1,0 +1,18 @@
+.icon {
+  width: calc(15 / 1280 * 100vw);
+  height: calc(15 / 1280 * 100vw);
+}
+
+@media screen and (max-width: 999px) {
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .icon {
+    width: calc(15 / 414 * 100vw);
+    height: calc(15 / 414 * 100vw);
+  }
+}

@@ -1,0 +1,194 @@
+.container {
+  padding: calc(60 / 640 * 100vh) calc(40 / 1280 * 100vw);
+}
+
+.title {
+  color: #228699;
+  font-size: calc(14 / 1280 * 100vw);
+  font-weight: 700;
+  margin-bottom: calc(21 / 640 * 100vh);
+}
+.group {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(14 / 1280 * 100vw);
+}
+
+.metric_box_1 {
+  width: calc(113 / 1280 * 100vw);
+  height: calc(117 / 640 * 100vh);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: calc(10 / 1280 * 100vw);
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  align-items: center;
+  justify-content: center;
+}
+.metric_figure {
+  color: #210721;
+  text-align: center;
+  font-size: calc(20 / 1280 * 100vw);
+  font-weight: 700;
+}
+.metric_label {
+  color: #228699;
+  text-align: center;
+  font-family: Inter;
+  font-size: calc(12 / 1280 * 100vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: calc(10 / 640 * 100vh);
+}
+.metric {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(7 / 1280 * 100vw);
+  width: calc(353 / 1280 * 100vw);
+}
+
+.search_input {
+  width: calc(653 / 1280 * 100vw);
+  height: calc(39 / 640 * 100vh);
+  outline: none;
+  border: none;
+  padding: calc(5 / 1280 * 100vw) calc(10 / 640 * 100vh);
+  border-radius: calc(10 / 1280 * 100vw);
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+}
+.search_bar {
+  display: flex;
+  align-items: center;
+}
+.button {
+  margin-left: calc(5 / 1280 * 100vw);
+  width: calc(58 / 1280 * 100vw);
+  height: calc(39 / 640 * 100vh);
+  border-radius: calc(10 / 1280 * 100vw);
+  background: #228699;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  color: #fff;
+  font-family: Inter;
+  font-size: calc(12 / 1280 * 100vw);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.button:hover {
+  background: #228599c4;
+}
+.search_container {
+  margin-right: calc(10 / 1280 * 100vw);
+}
+
+.search_input,
+.search_input::placeholder {
+  color: #228699;
+  font-family: Inter;
+  font-size: calc(10 / 1280 * 100vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+}
+
+.search_input::placeholder {
+  color: #228699;
+}
+.users_group {
+  width: calc(789 / 1280 * 100vw);
+  height: calc(360 / 640 * 100vh);
+  margin-top: calc(10 / 640 * 100vh);
+  border-radius: calc(10 / 1280 * 100vw);
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: calc(9 / 1280 * 100vw);
+  padding: calc(10 / 640 * 100vh) calc(10 / 1280 * 100vw);
+  overflow-y: scroll;
+}
+.users_name,
+.users_email,
+.users_country,
+.users_earned,
+.warn,
+.ban {
+  color: #000;
+  text-align: justify;
+  font-family: Inter;
+  font-size: calc(10 / 1280 * 100vw);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: calc(200 / 1280 * 100vw);
+}
+.warn,
+.ban {
+  width: calc(50 / 1280 * 100vw);
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  margin-right: calc(10 / 1280 * 100vw);
+}
+.warn:hover {
+  color: rgba(255, 0, 0, 0.648);
+}
+.ban {
+  color: #228699;
+  /* width: 50px; */
+}
+.ban:hover {
+  color: hsla(190, 64%, 37%, 0.648);
+}
+.name_heading {
+  width: calc(200 / 1280 * 100vw);
+}
+.users_email,
+.email_heading {
+  width: calc(300 / 1280 * 100vw);
+}
+
+.users_country,
+.country_heading {
+  width: calc(120 / 1280 * 100vw);
+}
+
+.users_earned,
+.earned_heading {
+  width: calc(100 / 1280 * 100vw);
+}
+.users_row {
+  width: 100%;
+  padding: calc(10 / 640 * 100vh) calc(10 / 1280 * 100vw);
+  background: #f8f8f8;
+  display: flex;
+  gap: calc(5 / 1280 * 100vw);
+}
+.headings_row {
+  display: flex;
+  gap: calc(5 / 1280 * 100vw);
+}
+.name_heading,
+.email_heading,
+.country_heading,
+.earned_heading,
+.action {
+  color: #908b8b;
+  text-align: justify;
+  font-family: Inter;
+  font-size: calc(12 / 1280 * 100vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.action {
+  width: calc(70 / 1280 * 100vw);
+}

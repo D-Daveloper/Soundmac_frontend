@@ -1,0 +1,326 @@
+.container {
+  width: 100%;
+  height: 100vh; /* Use 100vh for the full height of the viewport */
+  background: rgba(34, 133, 153, 0.388);
+  position: fixed;
+  z-index: 600;
+  top: 0;
+  left: 0;
+}
+
+.first_tutorial_container,
+.second_tutorial_container,
+.third_tutorial_container {
+  position: fixed;
+  top: 60.3975vh; /* 390px / 1280 * 100 */
+  left: 5.390625vw; /* 69px / 1280 * 100 */
+  width: 19.921875vw; /* 255px / 1280 * 100 */
+  height: 9.0625vw; /* 116px / 1280 * 100 */
+  flex-shrink: 0;
+  fill: #0d72ea;
+  filter: drop-shadow(
+    0px 0px 0.3125vw rgba(0, 0, 0, 0.25)
+  ); /* 4px / 1280 * 100 */
+}
+
+.second_tutorial_container {
+  top: 58.59375vh; /* 375px / 1280 * 100 */
+  left: 54.6875vw; /* 700px / 1280 * 100 */
+}
+
+.third_tutorial_container {
+  top: 39.84375vh; /* 255px / 1280 * 100 */
+  left: 5.390625vw; /* 69px / 1280 * 100 */
+  width: 19.1640625vw; /* 246.5px / 1280 * 100 */
+  height: 10.9375vw; /* 140px / 1280 * 100 */
+  flex-shrink: 0;
+}
+
+.title {
+  text-transform: capitalize;
+  color: #fff;
+  font-family: Lato;
+  font-size: 1.25vw; /* 16px / 1280 * 100 */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.first_instruction_con,
+.second_instruction_con,
+.third_instruction_con {
+  position: relative;
+  top: 63.5625vh; /* 410px / 1280 * 100 */
+  width: 17.109375vw; /* 219px / 1280 * 100 */
+  left: 6.640625vw; /* 85px / 1280 * 100 */
+  display: flex;
+  flex-direction: column;
+}
+
+.second_instruction_con {
+  left: 56.25vw; /* 720px / 1280 * 100 */
+  top: 61.5vh; /* 395px / 1280 * 100 */
+}
+
+.third_instruction_con {
+  top: 42.9vh; /* 275px / 1280 * 100 */
+  left: 6.484375vw; /* 83px / 1280 * 100 */
+  flex-shrink: 0;
+}
+
+.instruction {
+  width: 15.703125vw; /* 202px / 1280 * 100 */
+  margin: 0.625vw 0; /* 8px / 1280 * 100 */
+  color: #fff;
+  font-family: Lato;
+  font-size: 0.78125vw; /* 10px / 1280 * 100 */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.next_btn_container {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+}
+
+.next_btn {
+  width: 3.90625vw; /* 50px / 1280 * 100 */
+  height: 1.640625vw; /* 21px / 1280 * 100 */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.78125vw; /* 10px / 1280 * 100 */
+  background: #fff;
+  color: #000;
+  font-family: Lato;
+  font-size: 0.78125vw; /* 10px / 1280 * 100 */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.next_btn:hover {
+  background: var(--whiteBtnHover);
+}
+@media screen and (max-width: 999px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .first_tutorial_container,
+  .second_tutorial_container,
+  .third_tutorial_container {
+    top: 450px;
+    left: 15px;
+    width: 255px;
+    height: 146px;
+
+    filter: drop-shadow(
+      0px 0px 0.3125vw rgba(0, 0, 0, 0.25)
+    ); /* 4px / 1280 * 100 */
+  }
+  .first_tutorial_container {
+    transform: scaleX(-1);
+  }
+
+  .second_tutorial_container {
+    top: 450px;
+    left: 120px;
+  }
+
+  .third_tutorial_container {
+    top: 240px; /* 255px / 1280 * 100 */
+    left: 69px;
+    width: 255px;
+    height: 140px;
+    flex-shrink: 0;
+  }
+
+  .title {
+    text-transform: capitalize;
+    color: #fff;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .first_instruction_con,
+  .second_instruction_con,
+  .third_instruction_con {
+    position: relative;
+    top: 485px; /* 410px / 1280 * 100 */
+    width: 219px; /* 219px / 1280 * 100 */
+    left: 33px; /* 85px / 1280 * 100 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second_instruction_con {
+    left: 135px;
+    top: 485px;
+  }
+
+  .third_instruction_con {
+    top: 255px;
+    left: 89px;
+    flex-shrink: 0;
+  }
+
+  .instruction {
+    width: 202px;
+    margin: 8px 0; /* 8px / 1280 * 100 */
+    color: #fff;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .next_btn_container {
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+  }
+
+  .next_btn {
+    width: fit-content;
+    padding: 10px;
+    height: 21px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .next_btn:hover {
+    background: var(--whiteBtnHover);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .first_tutorial_container,
+  .second_tutorial_container,
+  .third_tutorial_container {
+    top: calc(490 / 896 * 100vh);
+    left: calc(15 / 414 * 100vw);
+    width: calc(255 / 414 * 100vw);
+    height: calc(146 / 896 * 100vh);
+
+    filter: drop-shadow(
+      0px 0px 0.3125vw rgba(0, 0, 0, 0.25)
+    ); /* 4px / 1280 * 100 */
+  }
+  .first_tutorial_container {
+    transform: scaleX(-1);
+  }
+
+  .second_tutorial_container {
+    top: calc(450 / 896 * 100vh);
+    left: calc(120 / 414 * 100vw);
+  }
+
+  .third_tutorial_container {
+    top: calc(260 / 896 * 100vh);
+    left: calc(69 / 414 * 100vw);
+    width: calc(355 / 414 * 100vw);
+    height: calc(160 / 896 * 100vh);
+    flex-shrink: 0;
+  }
+
+  .title {
+    text-transform: capitalize;
+    color: #fff;
+    font-family: Lato;
+    font-size: calc(14 / 414 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .first_instruction_con,
+  .second_instruction_con,
+  .third_instruction_con {
+    position: relative;
+    top: calc(522 / 896 * 100vh); /* 410px / 1280 * 100 */
+    width: calc(219 / 414 * 100vw); /* 219px / 1280 * 100 */
+    left: calc(33 / 414 * 100vw); /* 85px / 1280 * 100 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second_instruction_con {
+    left: calc(135 / 414 * 100vw);
+    top: calc(483 / 896 * 100vh);
+  }
+
+  .third_instruction_con {
+    top: calc(280 / 896 * 100vh);
+    left: calc(140 / 414 * 100vw);
+    flex-shrink: 0;
+  }
+
+  .instruction {
+    width: calc(202 / 414 * 100vw);
+    margin: calc(8 / 896 * 100vh) 0; /* 8px / 1280 * 100 */
+    color: #fff;
+    font-family: Lato;
+    font-size: calc(12 / 414 * 100vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .next_btn_container {
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+  }
+
+  .next_btn {
+    width: fit-content;
+    padding: calc(10 / 896 * 100vh) calc(10 / 414 * 100vw);
+    height: calc(21 / 896 * 100vh);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(10 / 414 * 100vw);
+    background: #fff;
+    color: #000;
+    font-family: Lato;
+    font-size: calc(12 / 414 * 100vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .next_btn:hover {
+    background: var(--whiteBtnHover);
+  }
+}

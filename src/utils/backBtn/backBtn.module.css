@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  margin-right: 0.234375vw;
+  cursor: pointer;
+}
+.arrow_container {
+  background: white;
+  display: flex;
+  border-radius: 0.390625vw;
+  margin-right: 0.78125vw;
+  padding: calc(3 / 640 * 100vh) calc(3 / 1280 * 100vw);
+  cursor: pointer;
+}
+.arrow_container:hover {
+  background: rgba(0, 0, 0, 0.132);
+}
+
+.title {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.09375vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 999px) {
+  .arrow {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .arrow_container {
+    border-radius: 2px;
+    margin-right: 2px;
+    padding: 3px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .arrow {
+    width: calc(30 / 414 * 100vw);
+    height: calc(30 / 414 * 100vw);
+    margin-right: calc(5 / 414 * 100vw);
+  }
+  .arrow_container {
+    border-radius: calc(2 / 414 * 100vw);
+    margin-right: calc(5 / 414 * 100vw);
+    padding: calc(3 / 414 * 100vw) calc(3 / 414 * 100vw);
+  }
+
+  .title {
+    font-size: calc(14 / 414 * 100vw);
+  }
+}

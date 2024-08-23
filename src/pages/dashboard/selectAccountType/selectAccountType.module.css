@@ -1,0 +1,239 @@
+.container {
+  background: #fff;
+  padding: 2.03125vw 2.890625vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.sub_container {
+  margin: 0px auto;
+  margin-top: 2.34375vw;
+}
+
+.instruction,
+.title {
+  color: #908b8b;
+  font-family: Inter;
+  font-size: 1.09375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.9375vw;
+}
+
+.click_here {
+  color: #4169e1;
+  text-decoration: underline;
+}
+
+.title {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select_containers,
+.checkout_sub_con {
+  margin-right: 1.328125vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 58.59375vw;
+  margin: 1.796875vw 0px;
+}
+.warning_container {
+  width: 58.59375vw;
+  margin-top: calc(5 / 640 * 100vh);
+}
+
+.checkout_sub_con {
+  justify-content: center;
+}
+
+.select_container {
+  width: 26.484375vw;
+  height: 4.96875vw;
+  flex-shrink: 0;
+  border-radius: 0.78125vw;
+  border: 0.234375vw solid #228699;
+  display: flex;
+  align-items: center;
+  padding: 1.5625vw;
+  margin-bottom: 0.859375vw;
+  cursor: pointer;
+  margin-right: 0.859375vw;
+}
+
+.select_container:hover {
+  border: 0.234375vw solid #4169e1;
+}
+
+.account_name,
+.checkout {
+  color: #908b8b;
+  font-family: Inter;
+  font-size: 1.09375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s;
+}
+
+.checkout {
+  color: #fff;
+  font-weight: 700;
+}
+
+.selector {
+  width: 1.328125vw;
+  height: 1.328125vw;
+  flex-shrink: 0;
+  border-radius: 100%;
+  margin-left: auto;
+  border: 0.234375vw solid #228699;
+}
+
+.input,
+.input::placeholder {
+  outline: none;
+  border: none;
+  background: none;
+  color: #908b8b;
+  font-family: Inter;
+  font-size: 1.09375vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+.button {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 339px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  align-items: center;
+  transition: all 0.2s;
+  background: #ff4500;
+  border-radius: 10px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+.warn {
+  font-size: 1.1vw;
+  padding-right: 1.563vw;
+  font-family: Inter;
+  color: rgb(255, 136, 0);
+}
+.warn_heading {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    padding: calc(10 / 896 * 100vh) calc(10 / 414 * 100vw);
+    width: 100%;
+  }
+
+  .sub_container {
+    margin: calc(10 / 896 * 100vh) 0;
+  }
+
+  .instruction,
+  .title {
+    font-size: calc(14 / 414 * 100vw);
+    margin-top: calc(12 / 896 * 100vh);
+  }
+  .instruction {
+    width: 100%;
+    font-size: calc(12 / 414 * 100vw);
+  }
+
+  .click_here {
+    color: #4169e1;
+    text-decoration: underline;
+  }
+
+  .select_containers,
+  .checkout_sub_con {
+    margin-right: 0;
+    width: 100%;
+    margin: calc(23 / 896 * 100vh) 0;
+    flex-direction: column;
+  }
+
+  .warning_container {
+    width: 100%;
+  }
+
+  .checkout_sub_con {
+    justify-content: center;
+  }
+
+  .select_container,
+  .add_artiste,
+  .loader_con {
+    width: 100%;
+    height: calc(64 / 896 * 100vh);
+    border-radius: calc(10 / 414 * 100vw);
+    border: calc(2 / 414 * 100vw) solid #228699;
+    padding: calc(10 / 896 * 100vh) calc(10 / 414 * 100vw);
+    margin-bottom: calc(11 / 896 * 100vh);
+    margin-right: 0;
+  }
+
+  .select_container:hover {
+    border: calc(2 / 414 * 100vw) solid #4169e1;
+  }
+
+  .account_name,
+  .checkout {
+    font-size: calc(12 / 414 * 100vw);
+  }
+
+  .checkout {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .selector {
+    width: calc(17 / 414 * 100vw);
+    height: calc(17 / 414 * 100vw);
+    flex-shrink: 0;
+    border-radius: 100%;
+    margin-left: auto;
+    border: calc(2 / 414 * 100vw) solid #228699;
+  }
+
+  .input,
+  .input::placeholder {
+    font-size: calc(12 / 414 * 100vw);
+  }
+  .button {
+    font-size: calc(14 / 414 * 100vw);
+    width: 100%;
+    height: calc(64 / 896 * 100vh);
+    border-radius: calc(10 / 414 * 100vw);
+  }
+
+  .button:hover {
+    transform: scale(0);
+  }
+  .warning_container {
+    margin-top: calc(5 / 896 * 100vh);
+  }
+  .warn {
+    font-size: calc(12 / 414 * 100vw);
+    padding-right: calc(3 / 414 * 100vw);
+  }
+}

@@ -1,0 +1,323 @@
+.container {
+  background: #fff;
+  padding: 1.953125vw 2.890625vw; /* (26 / 1280) * 100vw, (37 / 1280) * 100vw */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.sub_container {
+  margin: 0px auto;
+  margin-top: 2.34375vw; /* (30 / 1280) * 100vw */
+}
+
+.instruction,
+.title {
+  color: #908b8b;
+  font-family: Inter;
+  font-size: 1.09375vw; /* (14 / 1280) * 100vw */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.9375vw; /* (12 / 1280) * 100vw */
+}
+
+.instruction {
+  width: 26.484375vw; /* (339 / 1280) * 100vw */
+  font-size: 0.9375vw; /* (12 / 1280) * 100vw */
+}
+
+.title {
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select_containers {
+  margin-right: 1.328125vw; /* (17 / 1280) * 100vw */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 58.59375vw; /* (750 / 1280) * 100vw */
+  margin: 1.796875vw 0px; /* (23 / 1280) * 100vw, 0px */
+}
+
+.select_container,
+.add_artiste,
+.loader_con {
+  width: 26.484375vw; /* (339 / 1280) * 100vw */
+  height: 5vw; /* (64 / 1280) * 100vw */
+  flex-shrink: 0;
+  border-radius: 0.78125vw; /* (10 / 1280) * 100vw */
+  border: 0.234375vw solid #228699; /* (3 / 1280) * 100vw */
+  display: flex;
+  align-items: center;
+  padding: 1.5625vw; /* (20 / 1280) * 100vw */
+  margin-bottom: 0.859375vw; /* (11 / 1280) * 100vw */
+  cursor: pointer;
+  margin-right: 0.859375vw; /* (11 / 1280) * 100vw */
+}
+
+.add_artiste,
+.loader_con {
+  justify-content: center;
+  border: none;
+  background: #ff4500;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.09375vw; /* (14 / 1280) * 100vw */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.loader_con {
+  padding: 0.78125vw; /* (10 / 1280) * 100vw */
+}
+
+.loadingProgress {
+  /* margin-left: -0.5859375vw; */
+  position: absolute;
+}
+
+.add_artiste:hover {
+  background: var(--redBtnHover);
+}
+
+.select_container:hover {
+  border: 0.234375vw solid #4169e1; /* (3 / 1280) * 100vw */
+}
+
+.account_name,
+.checkout {
+  color: #908b8b;
+  font-family: Inter;
+  font-size: 1.09375vw; /* (14 / 1280) * 100vw */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.2s;
+}
+
+.checkout {
+  color: #fff;
+  font-weight: 700;
+}
+
+.selector {
+  width: 1.328125vw; /* (17 / 1280) * 100vw */
+  height: 1.328125vw; /* (17 / 1280) * 100vw */
+  flex-shrink: 0;
+  border-radius: 100%;
+  margin-left: auto;
+  border: 0.15625vw solid #228699; /* (2 / 1280) * 100vw */
+}
+
+.input,
+.input::placeholder {
+  outline: none;
+  border: none;
+  background: none;
+  color: #908b8b;
+  font-family: Inter;
+  font-size: 1.09375vw; /* (14 / 1280) * 100vw */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+
+.password_checks {
+  color: #000;
+  font-family: Lato;
+  font-size: calc(10 / 1280 * 100vw);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.password_checks_container {
+  display: flex;
+  align-items: center;
+}
+.check_icon {
+  width: calc(12 / 1280 * 100vw);
+  height: calc(12 / 1280 * 100vw);
+  color: #027d15;
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .sub_container {
+    margin-top: 10px;
+  }
+
+  .instruction,
+  .title {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  .instruction {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .select_containers {
+    margin-right: 0;
+    width: 100%;
+    margin: 23px 0;
+  }
+
+  .select_container,
+  .add_artiste,
+  .loader_con {
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+    border: 2px solid #228699;
+    padding: 10px;
+    margin-bottom: 11px;
+    margin-right: 0;
+  }
+
+  .add_artiste,
+  .loader_con {
+    font-size: 14px;
+    border: none;
+  }
+
+  .loader_con {
+    padding: 10px;
+  }
+
+  .loadingProgress {
+    position: absolute;
+  }
+
+  .select_container:hover {
+    border: 2px solid #4169e1; /* (3 / 1280) * 100vw */
+  }
+
+  .account_name,
+  .checkout {
+    font-size: 12px;
+  }
+
+  .checkout {
+    color: #fff;
+  }
+
+  .selector {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    margin-left: auto;
+    border: 2px solid #228699;
+  }
+
+  .input,
+  .input::placeholder {
+    font-size: 12px;
+  }
+  .password_checks {
+    font-size: 10px;
+  }
+  .check_icon {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding: calc(10 / 896 * 100vh) calc(10 / 414 * 100vw);
+    width: 100%;
+  }
+
+  .sub_container {
+    margin-top: calc(10 / 896 * 100vh);
+  }
+
+  .instruction,
+  .title {
+    font-size: calc(14 / 414 * 100vw);
+    margin-top: calc(12 / 896 * 100vh);
+  }
+
+  .instruction {
+    width: 100%;
+    font-size: calc(12 / 414 * 100vw);
+  }
+
+  .select_containers {
+    margin-right: 0;
+    width: 100%;
+    margin: calc(23 / 896 * 100vh) 0;
+  }
+
+  .select_container,
+  .add_artiste,
+  .loader_con {
+    width: 100%;
+    height: calc(64 / 896 * 100vh);
+    border-radius: calc(10 / 414 * 100vw);
+    border: calc(2 / 414 * 100vw) solid #228699;
+    padding: calc(10 / 896 * 100vh) calc(10 / 414 * 100vw);
+    margin-bottom: calc(11 / 896 * 100vh);
+    margin-right: 0;
+  }
+
+  .add_artiste,
+  .loader_con {
+    font-size: calc(14 / 414 * 100vw);
+    border: none;
+  }
+
+  .loader_con {
+    padding: calc(10 / 896 * 100vh) calc(10 / 414 * 100vw);
+  }
+
+  .loadingProgress {
+    position: absolute;
+  }
+
+  .select_container:hover {
+    border: calc(2 / 414 * 100vw) solid #4169e1; /* (3 / 1280) * 100vw */
+  }
+
+  .account_name,
+  .checkout {
+    font-size: calc(12 / 414 * 100vw);
+  }
+
+  .checkout {
+    color: #fff;
+  }
+
+  .selector {
+    width: calc(17 / 414 * 100vw);
+    height: calc(17 / 414 * 100vw);
+    flex-shrink: 0;
+    border-radius: 100%;
+    margin-left: auto;
+    border: calc(1 / 414 * 100vw) solid #228699;
+  }
+
+  .input,
+  .input::placeholder {
+    font-size: calc(12 / 414 * 100vw);
+  }
+  .password_checks {
+    font-size: calc(10 / 414 * 100vw);
+  }
+  .check_icon {
+    width: calc(12 / 414 * 100vw);
+    height: calc(12 / 414 * 100vw);
+  }
+}
