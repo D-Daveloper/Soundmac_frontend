@@ -28,7 +28,7 @@ const HomePage = () => {
       </div>
       <section className="">
         <div className="">
-          <div className="mx-auto max-w-[70%]">
+          <div className="mx-auto max-w-[70%] max-md:max-w-[90%] full">
             <h1 className="animate__animated animate__bounce my-11 text-4xl font-bold capitalize text-text">
               recent posts
             </h1>
@@ -78,10 +78,12 @@ const HomePage = () => {
             </section>
           </div>
         </div>
-        <div className="mx-auto flex max-w-[70%] justify-between gap-2 py-14">
+        <div className="mx-auto flex max-w-[70%] justify-between gap-2 py-14 full">
           <button
             className="rounded-full border border-black p-3 hover:bg-icon hover:text-white max-md:p-2"
-            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            onClick={() => {
+              window.scrollTo(0, 500)
+              setCurrentPage((prev) => Math.max(prev - 1, 1))}}
             disabled={currentPage === 1}
           >
             <ArrowLeft />
@@ -97,7 +99,7 @@ const HomePage = () => {
                 }
                 key={num + 1}
                 onClick={() => {
-                  window.scrollTo(0, 0)
+                  window.scrollTo(0, 500)
                   setCurrentPage(num + 1)
                 }}
                 disabled={currentPage === num + 1}
@@ -108,15 +110,16 @@ const HomePage = () => {
           </div>
           <button
             className="rounded-full border border-black p-3 hover:bg-icon hover:text-white max-md:p-2"
-            onClick={() =>
+            onClick={() =>{
+              window.scrollTo(0, 500)
               setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-            } 
+            } }
             disabled={currentPage === totalPages}
           >
             <ArrowRight />
           </button>
         </div>
-        <div className="mx-auto max-w-[70%]">
+        <div className="mx-auto max-w-[70%] full">
           <h3 className="text-[1.5vw] font-semibold capitalize max-md:text-lg">
             dont miss a beat!
           </h3>

@@ -45,47 +45,52 @@
     width: 100%;
     /* background: transparent; */
   }
+  .text_color{
+    color: #e54207 !important;
+  
+  }
+  @media (max-width:768px) {
+    .full{
+      max-width: 90% !important;
+    }
+  }
+
+  :root {
+    --btnHoverTransition: all 0.3s;
+    --redBtnHover: #e54207;
+    --whiteBtnHover: #e6e3e3;
+    --blueBtnHover: #193ba4;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  /* Hide the number input spin buttons */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Remove the default margin */
+  }
+  input[type="date"]:before {
+    color: #908b8b;
+    content: attr(placeholder) !important;
+    font-size: 14px;
+    width: 100%;
+  }
+  input[type="date"]:focus:before {
+    content: "" !important;
+  }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-:root {
-  --btnHoverTransition: all 0.3s;
-  --redBtnHover: #e54207;
-  --whiteBtnHover: #e6e3e3;
-  --blueBtnHover: #193ba4;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-/* Hide the number input spin buttons */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0; /* Remove the default margin */
-}
-input[type="date"]:before {
-  color: #908b8b;
-  content: attr(placeholder) !important;
-  font-size: 14px;
-  width: 100%;
-}
-input[type="date"]:focus:before {
-  content: "" !important;
-}

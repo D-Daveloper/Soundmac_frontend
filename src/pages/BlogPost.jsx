@@ -25,9 +25,9 @@ const BlogPost = () => {
   return (
     <div>
       <section className="bg-homebg py-10">
-        <div className="mx-auto w-[70%] max-lg:w-[90%]">
-          <p className="text-text">
-            Home {">"} Posts {">"} {article.Title}
+        <div className="mx-auto w-[70%] max-lg:w-[90%] pb-6">
+          <p className="text_color font-semibold flex">
+          <p className="underline"><Link to="/blog" className="inline">Blog</Link></p>{">"} <Link to="/blog"><p className="underline flex">Post</p></Link> {">"} <p>{article.Title}</p>
           </p>
           <article>
             <h1 className="text-2xl font-bold leading-normal text-text md:text-[2.8vw]">
@@ -69,9 +69,9 @@ const BlogPost = () => {
             </div>
           </article>
         </div>
-        <hr className="border-1 my-3 border-gray-800" />
+        <hr className="border-1 my-10 border-gray-800" />
         <div className="p-6">
-          <h1 className="text-2xl font-bold leading-normal text-text md:text-[2.8vw]">
+          <h1 className="text-2xl font-bold leading-normal text-text md:text-[2.8vw] mb-3">
             view other related posts
           </h1>
           <div className="flex flex-wrap justify-between gap-3">

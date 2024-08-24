@@ -107,7 +107,7 @@ function App() {
         <Route
           path="/blog"
           element={
-            <div className={classes.container}>
+            <div>
               <HeaderComponent />
               <HomePage />
               <FooterComponent />
@@ -117,7 +117,7 @@ function App() {
         <Route
           path="/post/:id"
           element={
-            <div className={classes.container}>
+            <div >
               <HeaderComponent />
               <BlogPost />
               <FooterComponent />

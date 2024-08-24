@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/icons/logo.svg";
 import hamburger from "../assets/icons/hamburger.svg";
 import closeicon from "../assets/icons/closeicon.svg";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const HeaderComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,28 +36,28 @@ const HeaderComponent = () => {
           </NavLink>
         </div>
         <nav role="navigation">
-          <ul className="flex gap-10 space-x-4 max-lg:hidden" role="list">
-            <li role="listitem" aria-label="Home">
+          <ul className="flex gap-10 space-x-4 max-lg:hidden" >
+            <li aria-label="Home">
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
                   isActive ? "text-[#E74C3C]" : "text-white hover:text-primary"
                 }
               >
-                Home
+                Blog
               </NavLink>
             </li>
-            <li role="listitem" aria-label="Soundmac">
+            <li aria-label="Soundmac">
               <NavLink
                 to="/"
                 className="hover:text-primary"
               >
-                Soundmac
+                Home
               </NavLink>
             </li>
           </ul>
         </nav>
-        <button className="lg:hidden" onClick={menuControl} role="button">
+        <button className="lg:hidden" onClick={menuControl} >
           <img src={isOpen ? closeicon : hamburger} alt="" />
         </button>
         <nav
@@ -70,21 +70,21 @@ const HeaderComponent = () => {
         >
           <ul
             className="flex h-dvh w-[80%] flex-col gap-10 bg-white p-10 lg:hidden"
-            role="list"
+            
           >
-            <li role="listitem">
+            <li >
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
                   isActive ? "text-[#E74C3C]" : "text-black hover:text-primary"
                 }
               >
-                Home
+                Blog
               </NavLink>
             </li>
-            <li role="listitem">
-              <NavLink href="/" className="hover:text-primary">
-                Soundmac
+            <li >
+              <NavLink to="/" className="hover:text-primary">
+                Home
               </NavLink>
             </li>
           </ul>

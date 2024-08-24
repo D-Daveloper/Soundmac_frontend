@@ -6,7 +6,7 @@ import hero_bg from "../assets/images/hero_bg.webp";
 const Hero = () => {
   return (
     <section>
-      <div className="grad img relative flex h-[600px] max-w-full justify-between overflow-hidden">
+      <div className="grad img relative flex h-[550px] max-md:h-[400px] max-w-full justify-between overflow-hidden">
         <img src={heroperson} alt="" className="z-20" />
         <img src={heroalbum} alt="" className="z-20" />
         <img src={hero_bg} alt="" className="absolute h-full w-full" />
