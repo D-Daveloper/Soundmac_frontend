@@ -1,7 +1,7 @@
-import blog_img1 from "../assets/images/blog_img1.png";
-import blog_img2 from "../assets/images/blog_img2.png";
-import blog_img3 from "../assets/images/blog_img3.png";
-import blog_img4 from "../assets/images/blog_img4.png";
+import blog_img1 from "../assets/images/blog_img1.webp";
+import blog_img2 from "../assets/images/blog_img2.webp";
+import blog_img3 from "../assets/images/blog_img3.webp";
+import blog_img4 from "../assets/images/blog_img4.webp";
 
 export const home_post = [
   {
