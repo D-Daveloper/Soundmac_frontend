@@ -37,6 +37,14 @@ const HeaderComponent = () => {
         </div>
         <nav role="navigation">
           <ul className="flex gap-10 space-x-4 max-lg:hidden" >
+            <li aria-label="Soundmac">
+              <NavLink
+                to="/"
+                className="hover:text-primary"
+              >
+                Home
+              </NavLink>
+            </li>
             <li aria-label="Home">
               <NavLink
                 to="/blog"
@@ -45,14 +53,6 @@ const HeaderComponent = () => {
                 }
               >
                 Blog
-              </NavLink>
-            </li>
-            <li aria-label="Soundmac">
-              <NavLink
-                to="/"
-                className="hover:text-primary"
-              >
-                Home
               </NavLink>
             </li>
           </ul>
@@ -73,6 +73,11 @@ const HeaderComponent = () => {
             
           >
             <li >
+              <NavLink to="/" className="hover:text-primary">
+                Home
+              </NavLink>
+            </li>
+            <li >
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
@@ -80,11 +85,6 @@ const HeaderComponent = () => {
                 }
               >
                 Blog
-              </NavLink>
-            </li>
-            <li >
-              <NavLink to="/" className="hover:text-primary">
-                Home
               </NavLink>
             </li>
           </ul>

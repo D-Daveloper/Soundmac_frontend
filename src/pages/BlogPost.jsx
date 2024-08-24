@@ -43,9 +43,7 @@ const BlogPost = () => {
             <div>
               <div className="">
                 <img
-                  src={article.imgURL}
-                  alt=""
-                  className="h-[530px] w-full rounded-[20px] object-none object-top max-md:h-full max-md:object-cover"
+                  src={article.imgURL} alt="" className="rounded-[20px] "
                 />
               </div>
               <div className="my-10 grid grid-cols-1 gap-8 text-justify lg:grid-cols-2">
@@ -53,17 +51,15 @@ const BlogPost = () => {
                 <p>{article.body}</p>
               </div>
               <div className="grid gap-8">
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8">
                   <img src={article.imgURL} alt="" className="rounded-[20px]" />
                   <p>{article.body}</p>
                 </div>
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8">
                   <img
-                    src={article.imgURL}
-                    alt=""
-                    className="order-2 rounded-[20px] max-lg:order-1"
+                    src={article.imgURL} alt="" className="rounded-[20px]"
                   />
-                  <p className="order-1 max-lg:order-2">{article.body}</p>
+                  <p className="">{article.body}</p>
                 </div>
               </div>
             </div>
